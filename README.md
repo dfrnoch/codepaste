@@ -5,6 +5,12 @@
 <p align="center">
   <strong>Easily share snippets, text and code 📋</strong>
 </p>
+
+---
+
+## Notice
+codepaste is in early dev that means nothing's working yet.
+
 ## Structure
 
 | Codebase               |   Description    |
