@@ -2,6 +2,8 @@ import express from "express";
 import helmet from "helmet";
 import routes from "./routes/v1";
 import compression from "compression";
+// import { connect } from "mongoose";
+// import { dbConnection } from "./databases";
 
 const app: express.Application = express();
 
@@ -19,3 +21,5 @@ app.use("/v1", routes);
 app.listen(PORT, () => {
   console.log(`server started at http://localhost:${PORT}`);
 });
+
+// connect(dbConnection.url, dbConnection.options);
