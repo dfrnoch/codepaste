@@ -1,10 +1,11 @@
-import express from "express";
+import express, { Router } from "express";
 import authRoute from "./auth.route";
 import postRoute from "./post.route";
+import { Routes } from "src/interfaces/router.interface";
 
-const router = express.Router();
+const router: Router = express.Router();
 
-const defaultRoutes = [
+const defaultRoutes: Routes[] = [
   {
     path: "/auth",
     route: authRoute,
@@ -15,7 +16,7 @@ const defaultRoutes = [
   },
 ];
 
-defaultRoutes.forEach((route) => {
+defaultRoutes.forEach((route: any) => {
   router.use(route.path, route.route);
 });
 

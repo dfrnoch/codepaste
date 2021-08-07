@@ -1,6 +1,6 @@
-import { Router } from "express";
+import { Router, PathParams } from "express-serve-static-core";
 
 export interface Routes {
-  path?: string;
-  router: Router;
+  path?: PathParams;
+  route: Router;
 }
