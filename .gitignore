@@ -5,6 +5,7 @@
 /extension/node_modules
 /server/node_modules
 /wesite/node_modules
+/server/dist
 /.pnp
 .pnp.js
 
